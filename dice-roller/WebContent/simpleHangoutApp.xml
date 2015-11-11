@@ -33,7 +33,9 @@
 </head>
 
 <body>
-
+<style type="text/css">
+  @import url("https://raw.githubusercontent.com/quantum-aberrant/dice-roller/master/dice-roller/WebContent/css/bootstrap.css");
+</style>
 <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
 
 <h3>Simple Hangout App1111111nnn</h3>
