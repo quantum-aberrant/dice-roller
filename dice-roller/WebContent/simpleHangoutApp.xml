@@ -33,24 +33,6 @@
 </head>
 
 <body>
-<script type="text/javascript">
-
-    function loadCSS(filename){ 
-
-       var file = document.createElement("link")
-       file.setAttribute("rel", "stylesheet")
-       file.setAttribute("type", "text/css")
-       file.setAttribute("href", filename)
-
-       if (typeof file !== "undefined")
-          document.getElementsByTagName("head")[0].appendChild(file)
-    }
-
-
-   //just call a function to load a new CSS:
-   loadCSS("https://raw.githubusercontent.com/quantum-aberrant/dice-roller/master/dice-roller/WebContent/css/bootstrap.css")
-
-</script>
 <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
 
 <h3>Simple Hangout App1111111nnn</h3>
@@ -100,6 +82,22 @@ function showParticipants() {
 }
 
 function init() {
+	function loadCSS(filename){ 
+
+       var file = document.createElement("link")
+       file.setAttribute("rel", "stylesheet")
+       file.setAttribute("type", "text/css")
+       file.setAttribute("href", filename)
+
+       if (typeof file !== "undefined")
+          document.getElementsByTagName("head")[0].appendChild(file)
+    }
+
+
+   //just call a function to load a new CSS:
+   loadCSS("https://raw.githubusercontent.com/quantum-aberrant/dice-roller/master/dice-roller/WebContent/css/bootstrap.css")
+
+
   // When API is ready...                                                         
   gapi.hangout.onApiReady.add(
       function(eventObj) {
