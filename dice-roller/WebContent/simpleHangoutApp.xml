@@ -99,7 +99,7 @@ function init() {
 
 
   // When API is ready...                                                         
-  gapi.hangout.onApiReady.add(
+  gapi.hangout.onApiReady.add( 
       function(eventObj) {
         if (eventObj.isApiReady) {
           document.getElementById('showParticipants')
