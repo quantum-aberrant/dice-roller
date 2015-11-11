@@ -84,7 +84,7 @@ function showParticipants() {
 function init() {
   // When API is ready...                                                         
   gapi.hangout.onApiReady.add( 
-      function(eventObj) {
+      function(eventObj) { 
         if (eventObj.isApiReady) {
           document.getElementById('showParticipants')
             .style.visibility = 'visible';
