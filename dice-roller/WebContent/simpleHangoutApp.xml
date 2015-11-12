@@ -17,75 +17,75 @@
 
 <html>
 <head>
-    <meta charset="utf-8">
-   	<link href="https://raw.githubusercontent.com/quantum-aberrant/dice-roller/master/dice-roller/WebContent/css/jquery-ui.css" rel="stylesheet">
+<meta charset="utf-8">
+<link href="http://quantum-aberrant.github.io/dice-roller/jquery-ui.css"
+	rel="stylesheet">
 </head>
 
 <body>
-<script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
+	<script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
 
-<h3>Simple Hangout App1111111nnn</h3>
+	<h3>Simple Hangout App1111111nnn</h3>
 
-<p>
-<input class="btn btn-primary" type="button" value="Show participants!" id="showParticipants" 
-    style="visibility:hidden;"
-    onClick="showParticipants()"/>
-</p>
+	<p>
+		<input class="btn btn-primary" type="button"
+			value="Show participants!" id="showParticipants"
+			style="visibility: hidden;" onClick="showParticipants()" />
+	</p>
 
-<input id="spinner">
+	<input id="spinner">
 
-<div id="participantsDiv"></div>
+	<div id="participantsDiv"></div>
 
-<hr>
+	<hr>
 
-
-
-<p><a href="http://developers.google.com/+/hangouts/getting-started">hi...changed</p>
-
-
-<script src="https://raw.githubusercontent.com/quantum-aberrant/dice-roller/master/dice-roller/WebContent/js/jquery.js"></script>
-<script src="https://raw.githubusercontent.com/quantum-aberrant/dice-roller/master/dice-roller/WebContent/js/jquery-ui.js"></script>
-<script>
-function showParticipants() {
-  var participants = gapi.hangout.getParticipants();
-
-  var retVal = '<p>Participants: </p><ul>';
-
-  for (var index in participants) {
-    var participant = participants[index];
-
-    if (!participant.person) {
-      retVal += '<li>A participant not running this app</li>';
-    }
-    retVal += '<li>' + participant.person.displayName + '</li>';
-  }
-
-  retVal += '</ul>';
-
-  var div = document.getElementById('participantsDiv');
-
-  div.innerHTML = retVal;
-}
-
-function init() {
-  // When API is ready...                                                         
-  gapi.hangout.onApiReady.add( 
-      function(eventObj) { 
-        if (eventObj.isApiReady) {
-          document.getElementById('showParticipants')
-            .style.visibility = 'visible';
-        }
-      });
-}
-
-// Wait for gadget to load.                                                       
-gadgets.util.registerOnLoadHandler(init);
-
-$( "#spinner" ).spinner();
-</script>
+	<p>
+		<a href="http://developers.google.com/+/hangouts/getting-started">hi...changed</a>
+	</p>
 
 
+	<script src="http://quantum-aberrant.github.io/dice-roller/jquery.js"></script>
+	<script
+		src="http://quantum-aberrant.github.io/dice-roller/jquery-ui.js"></script>
+	<script>
+		$("#spinner").spinner();
+
+		function showParticipants() {
+			var participants = gapi.hangout.getParticipants();
+
+			var retVal = '<p>Participants: </p><ul>';
+
+			for ( var index in participants) {
+				var participant = participants[index];
+
+				if (!participant.person) {
+					retVal += '<li>A participant not running this app</li>';
+				}
+				retVal += '<li>' + participant.person.displayName + '</li>';
+			}
+
+			retVal += '</ul>';
+
+			var div = document.getElementById('participantsDiv');
+
+			div.innerHTML = retVal;
+		}
+
+		function init() {
+			// When API is ready...                                                         
+			gapi.hangout.onApiReady
+					.add(function(eventObj) {
+						if (eventObj.isApiReady) {
+							document.getElementById('showParticipants').style.visibility = 'visible';
+						}
+					});
+		}
+
+		// Wait for gadget to load.                                                       
+		gadgets.util.registerOnLoadHandler(init);
+	</script>
 </body>
+</html>
 ]]>
 	</Content>
 </Module>
