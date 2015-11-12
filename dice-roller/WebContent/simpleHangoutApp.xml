@@ -32,13 +32,7 @@
     onClick="showParticipants()"/>
 </p>
 
-<button type="button" class="btn btn-default" aria-label="Left Align">
-  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-</button>
-
-<button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-</button>
+<input id="spinner">
 
 <div id="participantsDiv"></div>
 
@@ -86,6 +80,8 @@ function init() {
 
 // Wait for gadget to load.                                                       
 gadgets.util.registerOnLoadHandler(init);
+
+$( "#spinner" ).spinner();
 </script>
 
 
