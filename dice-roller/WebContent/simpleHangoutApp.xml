@@ -44,7 +44,7 @@
 	</p>
 
 
-	<script src="http://quantum-aberrant.github.io/dice-roller/jquery.js"></script>
+	<script src="http://quantum-aberrant.github.io/dice-roller/external/jquery/jquery.js"></script>
 	<script
 		src="http://quantum-aberrant.github.io/dice-roller/jquery-ui.js"></script>
 	<script>
