@@ -18,8 +18,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link href="http://quantum-aberrant.github.io/dice-roller/jquery-ui.css"
-	rel="stylesheet">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 </head>
 
 <body>
@@ -44,9 +43,8 @@
 	</p>
 
 
-	<script src="http://quantum-aberrant.github.io/dice-roller/external/jquery/jquery.js"></script>
-	<script
-		src="http://quantum-aberrant.github.io/dice-roller/jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script>
 		$("#spinner").spinner();
 
